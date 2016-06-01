@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c:catalog
+	xmlns:c="http://www.epam.by.task04/catalog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.epam.by.task04/catalog catalog.xsd">
+
+	<category name="film">
+		<subcategory name="horror">
+			<news>
+				<name>Silent Hill</name>
+				<author>Christophe Gans</author>
+				<dateOfIssue>2006-04-21</dateOfIssue>
+				<body>The film is based on the «Silent Hill» computer game (1999)</body>
+			</news>
+		</subcategory>
+		<subcategory name="fantastic">
+			<news>
+				<name>The Martian</name>
+				<author>Ridley Scott</author>
+				<dateOfIssue>2015-09-11</dateOfIssue>
+				<body>The film is based on the novel by Andy Weir's "The Martian» (2011)</body>
+			</news>
+			<news>
+				<name>The Fifth Element</name>
+				<author>Luc Besson</author>
+				<dateOfIssue>1997-05-07</dateOfIssue>
+				<body>Every five thousand years of open doors between dimensions and the dark forces seeking to disrupt the existing harmony</body>
+			</news>
+		</subcategory>
+	</category>
+	
+	<category name="disk">
+		<subcategory name="pop">
+			<news>
+				<name>Prism</name>
+				<author>Katy Perry</author>
+				<dateOfIssue>2013-07-12</dateOfIssue>
+				<body>The fourth studio album by American singer Katy Perry, published in 2013 by Capitol Records</body>
+			</news>
+		</subcategory>
+		<subcategory name="metal">
+			<news>
+				<name>In the Arms of Devastation</name>
+				<author>Kataklysm</author>
+				<dateOfIssue>2006-03-25</dateOfIssue>
+				<body>Canadian death metal band. The band calls its style «Northern Hyperblast»</body>
+			</news>
+			<news>
+				<name>A Skeletal Domain</name>
+				<author>Cannibal Corpse</author>
+				<dateOfIssue>2014-09-16</dateOfIssue>
+				<body>The Thirteenth album of the best-selling death metal bands</body>
+			</news>
+		</subcategory>
+	</category>
+	
+	<category name="book">
+		<subcategory name="scientific-literature">
+			<news>
+				<name>Java. Methods of programming</name>
+				<author>Blinov I.N.</author>
+				<dateOfIssue>2013-01-01</dateOfIssue>
+				<body>The manual is intended for programmers, beginners and advanced learning technologies Java SE, JEE and others.</body>
+			</news>
+		</subcategory>
+		<subcategory name="detective">
+			<news>
+				<name>A Coffin From Hong Kong</name>
+				<author>James Hadley Chase</author>
+				<dateOfIssue>1962-01-01</dateOfIssue>
+				<body>Master of detective intrigue, the king of unexpected plot twists</body>
+			</news>
+		</subcategory>
+	</category>
+	
+</c:catalog>
