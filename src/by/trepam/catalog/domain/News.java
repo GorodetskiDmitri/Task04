@@ -3,13 +3,21 @@ package by.trepam.catalog.domain;
 import javax.xml.bind.annotation.*;
 
 
-@XmlRootElement(name = "news")
-@XmlType(propOrder = {"name", "author", "dateOfIssue", "body"})
+@XmlRootElement
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "News", propOrder = {"name", "author", "dateOfIssue", "body"})
 public class News {
 
+	@XmlElement(required = true)
     private String name;
+	
+	@XmlElement(required = true)
     private String author;
+	
+	@XmlElement(required = true)
     private String dateOfIssue;
+	
+	@XmlElement(required = true)
     private String body;
 
     public News(){
@@ -27,7 +35,6 @@ public class News {
         return name;
     }
 
-    @XmlElement(name = "name")
     public void setName(String name) {
         this.name = name;
     }
@@ -36,7 +43,6 @@ public class News {
         return author;
     }
 
-    @XmlElement(name = "author")
     public void setAuthor(String author) {
         this.author = author;
     }
@@ -45,7 +51,6 @@ public class News {
         return dateOfIssue;
     }
 
-    @XmlElement(name = "dateOfIssue")
     public void setDate(String dateOfIssue) {
         this.dateOfIssue = dateOfIssue;
     }
@@ -54,7 +59,6 @@ public class News {
         return body;
     }
 
-    @XmlElement(name = "body")
     public void setBody(String body) {
         this.body = body;
     }

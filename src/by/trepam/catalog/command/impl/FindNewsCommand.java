@@ -17,7 +17,7 @@ public class FindNewsCommand implements Command {
         String nameOfNews = request.getNameOfNews();
         String body = request.getBody();
         String commandName = request.getCommandName();
-
+        
         Criterion criterion = new Criterion(nameOfNews, body);
 
         ServiceFactory factory = ServiceFactory.getInstance();

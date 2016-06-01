@@ -9,7 +9,7 @@ public class View {
     public Request doUserActionSave(){
 
         Request request = new Request();
-        request.setCommandName("save new news");
+        request.setCommandName("Save new news");
         request.setCategoryName("disk");
         request.setSubCategoryName("metal");
         request.setNameOfNews("Damned In Black");
@@ -23,9 +23,9 @@ public class View {
     public Request doUserActionFind(){
 
         Request request = new Request();
-        request.setCommandName("find news");
-        request.setBody("The manual");
-        request.setNameOfNews("A Coffin From Hong Kong");
+        request.setCommandName("Find News");
+        request.setBody("Master");
+        request.setNameOfNews("In the");
 
         return request;
     }

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<c:catalog
+<!-- <c:catalog
 	xmlns:c="http://www.epam.by.task04/catalog"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.epam.by.task04/catalog catalog.xsd">
-
+	xsi:schemaLocation="http://www.epam.by.task04/catalog catalog.xsd"> -->
+<catalog>
 	<category name="film">
 		<subcategory name="horror">
 			<news>
@@ -43,7 +43,7 @@
 				<name>In the Arms of Devastation</name>
 				<author>Kataklysm</author>
 				<dateOfIssue>2006-03-25</dateOfIssue>
-				<body>Canadian death metal band. The band calls its style «Northern Hyperblast»</body>
+				<body>Canadian death metal band. The band calls its style "Northern Hyperblast"</body>
 			</news>
 			<news>
 				<name>A Skeletal Domain</name>
@@ -73,4 +73,4 @@
 		</subcategory>
 	</category>
 	
-</c:catalog>
+</catalog>

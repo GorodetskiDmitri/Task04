@@ -28,13 +28,12 @@ public class NewsServiceImpl implements Service {
     }
 
     @Override
-    public ListOfNews findNews(Criterion criterion,String commandName) throws ServiceException {
+    public ListOfNews findNews(Criterion criterion, String commandName) throws ServiceException {
 
             DAOFactory factory = DAOFactory.getInstance();
             NewsDAO newDAO = factory.getNewsDAO();
-
             try {
-                return  newDAO.findNews(criterion);
+                return newDAO.findNews(criterion);
             } catch (DAOException e) {
                 throw new ServiceException("Error of find", e);
             }
