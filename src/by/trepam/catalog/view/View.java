@@ -24,8 +24,8 @@ public class View {
 
         Request request = new Request();
         request.setCommandName("Find News");
-        request.setBody("Master");
-        request.setNameOfNews("In the");
+        request.setBody("death metal");
+        request.setNameOfNews("Silent Hill");
 
         return request;
     }

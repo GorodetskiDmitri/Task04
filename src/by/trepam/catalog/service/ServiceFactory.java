@@ -3,6 +3,7 @@ package by.trepam.catalog.service;
 public class ServiceFactory {
 
     private final static ServiceFactory factory = new ServiceFactory();
+    Service service = new NewsServiceImpl();
 
     private ServiceFactory(){
 
@@ -13,7 +14,7 @@ public class ServiceFactory {
     }
 
     public Service getNewsService(){
-        return new NewsServiceImpl();
+        return service;
     }
 
 }

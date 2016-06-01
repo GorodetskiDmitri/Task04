@@ -9,8 +9,8 @@ public class Main {
     public static void main(String[] args) {
         Controller controller = new Controller();
         View view = new View();
-        //Request request = view.doUserActionFind();
-        Request request = view.doUserActionSave();
+        Request request = view.doUserActionFind();
+        //Request request = view.doUserActionSave();
         Response response = controller.doAction(request);
         view.printMessage(response);
     }

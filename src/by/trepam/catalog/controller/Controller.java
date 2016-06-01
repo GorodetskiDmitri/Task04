@@ -14,12 +14,14 @@ public class Controller {
 
         String commandName = request.getCommandName();
         Command command = null;
+        
         try {
             command = commandHelper.getCommand(commandName);
         } catch (CommandException e) {
             e.printStackTrace();
         }
-        return command.execute(request);
+        
+        Response response = command.execute(request);
+        return response;
     }
-
 }

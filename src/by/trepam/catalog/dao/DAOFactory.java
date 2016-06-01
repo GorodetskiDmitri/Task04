@@ -3,6 +3,7 @@ package by.trepam.catalog.dao;
 public class DAOFactory {
 
     private final static DAOFactory factory = new DAOFactory();
+    private NewsDAO newsDAO = new NewsDAOImpl();
 
     private DAOFactory(){
 
@@ -13,7 +14,7 @@ public class DAOFactory {
     }
 
     public NewsDAO getNewsDAO(){
-        return new NewsDAOImpl();
+        return newsDAO;
     }
 
 }

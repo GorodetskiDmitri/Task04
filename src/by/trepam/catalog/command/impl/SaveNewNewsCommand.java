@@ -17,12 +17,12 @@ public class SaveNewNewsCommand implements Command{
         String nameOfNews = request.getNameOfNews();
         String categoryName = request.getCategoryName();
         String subCategoryName = request.getSubCategoryName();
-        String provider = request.getAuthor();
-        String date = request.getDateOfIssue();
+        String author = request.getAuthor();
+        String dateOfIssue = request.getDateOfIssue();
         String body = request.getBody();
         String commandName = request.getCommandName();
 
-        News news = new News(nameOfNews,provider,date,body);
+        News news = new News(nameOfNews,author,dateOfIssue,body);
 
         ServiceFactory factory = ServiceFactory.getInstance();
         Service service = factory.getNewsService();
