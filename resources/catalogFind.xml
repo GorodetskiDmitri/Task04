@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<news>
+    <news>
+        <name>Silent Hill</name>
+        <author>Christophe Gans</author>
+        <dateOfIssue>2006-04-21</dateOfIssue>
+        <body>The film is based on the В«Silent HillВ» computer game (1999)</body>
+    </news>
+    <news>
+        <name>In the Arms of Devastation</name>
+        <author>Kataklysm</author>
+        <dateOfIssue>2006-03-25</dateOfIssue>
+        <body>Canadian death metal band. The band calls its style "Northern Hyperblast"</body>
+    </news>
+    <news>
+        <name>A Skeletal Domain</name>
+        <author>Cannibal Corpse</author>
+        <dateOfIssue>2014-09-16</dateOfIssue>
+        <body>The Thirteenth album of the best-selling death metal bands</body>
+    </news>
+</news>
