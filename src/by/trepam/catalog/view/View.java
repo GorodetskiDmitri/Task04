@@ -3,7 +3,6 @@ package by.trepam.catalog.view;
 import by.trepam.catalog.domain.Request;
 import by.trepam.catalog.domain.Response;
 
-
 public class View {
 
     public Request doUserActionSave(){
@@ -33,8 +32,8 @@ public class View {
     public void printMessage(Response response){
 
         System.out.println(response.getMessage());
-        if(response.getListOfFoundNews()!=null){
-            System.out.println(response.getListOfFoundNews().toString());
+        if (response.getListOfFoundNews() != null){
+            System.out.println(response.getListOfFoundNews().show());
         }
     }
 }
