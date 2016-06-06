@@ -8,6 +8,7 @@ import java.util.List;
 @XmlRootElement(name = "subcategory")
 public class SubCategory {
 
+    @XmlElement(name = "news")
     private List<News> list;
     private String name;
 
@@ -33,7 +34,6 @@ public class SubCategory {
         return list;
     }
 
-    @XmlElement(name = "news")
     public void setListOfNews(List<News> list) {
         this.list = list;
     }

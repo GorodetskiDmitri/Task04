@@ -6,23 +6,28 @@ import java.util.ArrayList;
 
 @XmlRootElement(name = "news")
 public class ListOfNews {
-    private ArrayList<News> list = new ArrayList<>();
+	@XmlElement(name = "news")
+    private ArrayList<News> listOfNews = new ArrayList<>();
+    
+    public ListOfNews() {
+    	
+    }
 
     public ArrayList<News> getList() {
-        return list;
+        return listOfNews;
     }
-    @XmlElement(name = "news")
+    
     public void setList(ArrayList<News> list) {
-        this.list = list;
+        this.listOfNews = list;
     }
 
     public void addNews(News news){
-        list.add(news);
+        listOfNews.add(news);
     }
 
     public String show() {
         String stringNews = "";
-        for (News news : list) {
+        for (News news : listOfNews) {
             stringNews += news.show() + "\n\n";
         }
         return stringNews;
@@ -35,17 +40,17 @@ public class ListOfNews {
 
         ListOfNews news = (ListOfNews) o;
 
-        return !(list != null ? !list.equals(news.list) : news.list != null);
+        return !(listOfNews != null ? !listOfNews.equals(news.listOfNews) : news.listOfNews != null);
 
     }
 
     @Override
     public int hashCode() {
-        return list != null ? list.hashCode() : 0;
+        return listOfNews != null ? listOfNews.hashCode() : 0;
     }
 
     @Override
     public String toString() {
-    	return getClass().getName() + "@" + "list : " + list;
+    	return getClass().getName() + "@" + "listOfNews : " + listOfNews;
     }
 }

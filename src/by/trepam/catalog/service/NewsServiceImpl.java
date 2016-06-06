@@ -1,6 +1,5 @@
 package by.trepam.catalog.service;
 
-import by.trepam.catalog.command.CommandName;
 import by.trepam.catalog.dao.DAOFactory;
 import by.trepam.catalog.dao.NewsDAO;
 import by.trepam.catalog.dao.exception.DAOException;

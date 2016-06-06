@@ -2,7 +2,9 @@ package by.trepam.catalog.service.exception;
 
 public class ServiceException extends Exception {
 
-    public ServiceException(String message){
+	private static final long serialVersionUID = -4986880902920034823L;
+
+	public ServiceException(String message){
         super(message);
     }
 
